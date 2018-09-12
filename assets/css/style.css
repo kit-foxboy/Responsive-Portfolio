@@ -109,18 +109,27 @@ p {
 }
 
 .image-row {
-    margin-top: 35px;
+    width: 100%;
+    display: inline;
 }
 
 .image-container {
-    width: 160px;
-    height: 120px;
-    margin-right: 25px;
+    width: calc(25% - 1rem);
+    margin-top: 1.5rem;
+    margin-right: 1rem;
     display: inline-block;
+}
+
+.image-container:last-child {
+    margin-right: 0;
 }
 
 .image-container a {
     text-decoration: none;
+}
+
+.image-container img {
+    width: 100%;
 }
 
 .image-label {
@@ -197,6 +206,11 @@ footer p {
     #content {
         width: 90%;
     }
+
+    .image-container {
+        width: calc(50% - 1.15rem);
+        display: inline-block;
+    }
 }
 
 @media only screen and (max-width: 640px) {
@@ -227,5 +241,14 @@ footer p {
 
     .profile-image img {
         width: 100%;
+    }
+
+    .image-container {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .img-label {
+        margin-top: -50px;
     }
 }
