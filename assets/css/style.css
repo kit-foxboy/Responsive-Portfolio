@@ -4,29 +4,12 @@ body {
     background-color: #ececec;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-p {
-    /* text-indent: 20px; */
-    margin-top: 10px;
-    line-height: 1.5em;
-}
-h2 {
-    font-size: 1.5em;
-    padding-left: 50px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    color: teal;
-}
 
-hr {
-    background-color: #777;
-    width: 860px;
-    height: 1px;
-}
 nav {
     width: 100%;
     height: 70px;
     line-height: 70px;
-    font-size: .8em;
+    font-size: .8rem;
     margin-left: auto;
     margin-right: auto;
     text-align: right;
@@ -35,15 +18,17 @@ nav {
 }
 
 .nav-bar {
-    width: 960px;
-    margin-left: 240px;
+    width: 75%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: white;
 }
 
 nav h1 {
     height: 70px;
-    padding: 0 20px;
-    font-size: 1.68em;
+    padding: 0 1rem;
+    font-size: 1.68rem;
     float: left;
     font-family: 'Pacifico', cursive;
     background-color: teal;
@@ -71,6 +56,85 @@ nav a {
 
 nav a:hover {
     color: #E89F0C;
+}
+
+#content-container {
+    width: 100%;
+    margin-bottom: 6rem;
+}
+
+#content {
+    width: 75%;
+    max-width: 900px;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+h2 {
+    width: 90%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    padding-left: 3rem;
+    color: teal;
+}
+
+hr {
+    background-color: #777;
+    width: 90%;
+    height: 1px;
+}
+
+#text-body {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* font-size: 1rem; */
+}
+
+p {
+    margin-top: 1.25rem;
+    line-height: 1.25rem;
+}
+
+.profile-image {
+    float: left;
+    margin-right: 1.56rem;
+    margin-bottom: 1.56rem;
+}
+
+.image-row {
+    margin-top: 35px;
+}
+
+.image-container {
+    width: 160px;
+    height: 120px;
+    margin-right: 25px;
+    display: inline-block;
+}
+
+.image-container a {
+    text-decoration: none;
+}
+
+.image-label {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    margin-top: -40px;
+    position: relative;
+    text-align: center;
+    background-color: teal;
+    color: white;
+}
+
+.image-label:hover {
+    background-color: #E89F0C;
 }
 
 label {
@@ -116,60 +180,55 @@ footer p {
     margin-top: 25px;
 }
 
+@media only screen and (max-width: 980px) {
+    
+    .nav-bar {
+        width: 90%
+    }
 
-/* Class Styles */
-#content-container {
-    width: 100%;
-    height: 100%;
+    #content {
+        width: 90%;
+    }
 }
 
-#content {
-    width: 960px;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-    border: 1px solid #ddd;
+@media only screen and (max-width: 768px) {
+
+    #content {
+        width: 90%;
+    }
 }
 
-#text-body {
-    width: 860px;
-    margin-top: 25px;
-    margin-left: 50px;
-    margin-bottom: 25px;
-}
+@media only screen and (max-width: 640px) {
 
-.profile-image {
-    float: left;
-    margin-right: 25px;
-}
+    nav {
+        width: 100%;
+        height: 120px;
+    }
+    .nav-bar {
+        width: 100%;
+        height: 35px;
+    }
 
-.image-row {
-    margin-top: 35px;
-}
+    nav h1 {
+        width: 100%;
+        text-align: center;
+    }
 
-.image-container {
-    width: 160px;
-    height: 120px;
-    margin-right: 25px;
-    display: inline-block;
-}
+    nav ul {
+        width: 100%;
+        line-height: 52px;
+        text-align: center;
+    }
 
-.image-container a {
-    text-decoration: none;
-}
+    h2 {
+        font-size: 2rem;
+    }
 
-.image-label {
-    width: 100%;
-    height: 35px;
-    line-height: 35px;
-    margin-top: -40px;
-    position: relative;
-    text-align: center;
-    background-color: teal;
-    color: white;
-}
+    #content {
+        width: 95%;
+    }
 
-.image-label:hover {
-    background-color: #E89F0C;
+    .profile-image img {
+        width: 100%;
+    }
 }
